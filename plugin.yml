@@ -1,0 +1,27 @@
+name: coordtp
+main: info.quiddel.coordtp.CoordTp
+version: 1.0
+description: A plugin designed to re-enable you to tp to specific coordinates with essentials installed (not only to players)
+author: Quiddel
+#Add a softdepend from Essentials as you wouldn't need this plugin without?
+
+commands:
+  coordtp:
+    description: teleport yourself or others to specified coordinates
+
+permissions:
+  coordtp.*:
+    description: Gives access to ALL coordtp commands.
+    children:
+      coordtp.use.*: true
+  coordtp.use.*:
+    description: Gives access to ALL coordtp commands EXCEPT from administrative commands to come.
+    children:
+      coordtp.use.self: true
+      coordtp.use.others: true
+  coordtp.use.self:
+    description: permission to teleport yourself
+  coordtp.use.others:
+    description: permission to teleport others
+  coordtp.admin.*:
+    description: Will be required to enable / disable coordtp's functionality (not yet implemented).
