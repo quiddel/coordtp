@@ -2,6 +2,7 @@ coordtp
 =======
 
 A bukkit plugin re-enabeling you to teleport to fix coordinates with essentials.
+    
     Copyright (C) 2013 tuxtorvalds
 
     This program is free software: you can redistribute it and/or modify
